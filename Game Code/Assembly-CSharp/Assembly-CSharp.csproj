@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B64C629E-3F3C-4FA6-BE55-4BDF3D10B070}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\MyGame\Fox Adventure_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudioManager.cs" />
+    <Compile Include="CameraFollow.cs" />
+    <Compile Include="Collectible.cs" />
+    <Compile Include="DeadPoint.cs" />
+    <Compile Include="DestroyObjectOverTime.cs" />
+    <Compile Include="EnemyAI.cs" />
+    <Compile Include="EnemyAI_Static.cs" />
+    <Compile Include="Fox.cs" />
+    <Compile Include="HealthBar.cs" />
+    <Compile Include="InteractionSystem.cs" />
+    <Compile Include="InventorySystem.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="KillSound.cs" />
+    <Compile Include="LevelExit.cs" />
+    <Compile Include="LevelLoader.cs" />
+    <Compile Include="LevelManager.cs" />
+    <Compile Include="LevelSelector.cs" />
+    <Compile Include="LifeCount.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="MovingPlatform.cs" />
+    <Compile Include="PausedMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneFader.cs" />
+    <Compile Include="Shooting.cs" />
+    <Compile Include="ShootingAction.cs" />
+    <Compile Include="ShootingItem.cs" />
+    <Compile Include="ToolTip.cs" />
+    <Compile Include="TrapObject.cs" />
+    <Compile Include="UIElementDragger.cs" />
+    <Compile Include="UIManagerTech.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
